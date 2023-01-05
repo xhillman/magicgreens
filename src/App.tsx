@@ -4,6 +4,8 @@ import About from './components/About'
 import Systems from './components/Systems'
 import Products from './components/Products'
 
+import './app.css'
+
 function App() {
 
   return (

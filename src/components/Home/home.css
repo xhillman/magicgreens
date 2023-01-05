@@ -1,0 +1,12 @@
+.hero-section {
+  background-image: url("../../assets/hero-leaf.jpg");
+  background-color: #cccccc;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

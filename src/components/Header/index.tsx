@@ -1,18 +1,23 @@
+import './header.css';
+
+// q: how do i remove an underline from a tag
+// a: add text-decoration: none to the a tag
 
 
 function Header() {
   return (
     <>
-      <header>
-        <h4>Logo</h4>
+      <header className='header'>
+        <h4 className='logo'>Magic<span>Greens</span></h4>
         <nav>
-          <ul>
+          <ul className='navbar'>
             <li className='nav-item'><a href="/">Home</a></li>
             <li className='nav-item'><a href="/thestory">The Story</a></li>
             <li className='nav-item'><a href="/thesystems">The Systems</a></li>
             <li className='nav-item'><a href="/thegoods">The Goods</a></li>
           </ul>
         </nav>
+        <button className='cart-button'>Cart</button>
       </header>
     </>
   )
