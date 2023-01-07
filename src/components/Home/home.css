@@ -1,41 +1,101 @@
 .hero-section {
-  background-image: url("../../assets/hero-leaf.jpg");
+  /* background-image: url("../../assets/hero-leaf.jpg");
   background-color: #cccccc;
   height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
+  height: 100vh;
+}
+
+.hero-heading {
+  font-size: 9rem;
+  font-family: 'BioRhyme', serif;
+  color: green;
+  text-align: center;
+  background: url("../../assets/hero-leaf.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+  margin-bottom: 0;
+
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-subheading {
+  font-size: 2rem;
+  font-family: 'Space Mono', monospace;
+  color: green;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  background: url("../../assets/hero-leaf.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+}
+
+.shop-now-button {
+  font-family: 'Space Mono', monospace;
+  color: rgb(12, 20, 16);
+  width: 10rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #dedede);
+  box-shadow: 2px 2px 4px #b2b2b2,
+    -2px -2px 4px #ffffff;
+  cursor: pointer;
+}
+
+.shop-now-button:hover {
+  box-shadow: inset 2px 2px 4px #b2b2b2,
+    inset -2px -2px 4px #ffffff;
 }
 
 .tagline {
-  font-family: "Atma", cursive;
   font-size: 2rem;
+  font-family: 'BioRhyme', serif;
   color: green;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .value-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 .value-image {
   max-width: 50vw;
   height: 100%;
+  width: 50%;
   object-fit: cover;
+
+}
+
+.hero-content-container {
+  width: 50%;
 }
 
 .value-paragraph {
-  font-family: "Atma", cursive;
+  font-family: 'Atma', cursive;
   font-size: 3rem;
-  max-width: 50vw;
-  color: green;
-  text-align: center;
+  padding: 3rem;
 }

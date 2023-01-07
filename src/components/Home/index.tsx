@@ -2,6 +2,7 @@ import Header from "../Header";
 
 //placeholder image url
 import heroLeaf from '../../assets/hero-leaf.jpg';
+import fresh from '../../assets/fresh.jpg';
 import './home.css';
 
 function Home() {
@@ -9,21 +10,30 @@ function Home() {
     <>
       <Header />
       <div className='hero-section'>
-        <h2>Overlay text will go here.</h2>
-        <button>Shop Now</button>
-      </div>
-      <h3 className='tagline'>Fast - Fresh - Thoughtful</h3>
-      <div className='value-section'>
-        <img className='value-image' src="https://via.placeholder.com/300x200" />
-        <p className="value-paragraph">Fast Paragraph - Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga animi, accusamus ipsam iste exercitationem</p>
-      </div>
-      <div className='value-section'>
-        <p className="value-paragraph">Fresh Paragraph - Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga animi, accusamus ipsam iste exercitationem</p>
-        <img className='value-image' src="https://via.placeholder.com/300x200" />
+        <div className="headings">
+          <h2 className="hero-heading">MagicGreens</h2>
+          <p className="hero-subheading">Fast - Fresh - Thoughtful</p>
+          {/* <p className="hero-subheading">Farming of the future.</p> */}
+        </div>
+        <button className="shop-now-button">Shop Now</button>
       </div>
       <div className='value-section'>
-        <img className='value-image' src="https://via.placeholder.com/300x200" />
-        <p className="value-paragraph">Thoughtful Paragraph - Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga animi, accusamus ipsam iste exercitationem</p>
+        <img className='value-image' src={fresh} />
+        <div className="hero-content-container">
+          <p className="value-paragraph">Fast Paragraph</p>
+        </div>
+      </div>
+      <div className='value-section'>
+        <div className="hero-content-container">
+          <p className="value-paragraph">Fresh Paragraph</p>
+        </div>
+        <img className='value-image' src={fresh} />
+      </div>
+      <div className='value-section'>
+        <img className='value-image' src={fresh} />
+        <div className="hero-content-container">
+          <p className="value-paragraph">Thoughtful Paragraph</p>
+        </div>
       </div>
     </>
   )
