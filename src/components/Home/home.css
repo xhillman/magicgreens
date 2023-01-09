@@ -9,7 +9,7 @@
   /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
 }
 
 .hero-heading {
@@ -50,29 +50,25 @@
 
 .shop-now-button {
   font-family: 'Space Mono', monospace;
-  color: rgb(12, 20, 16);
+  color: rgb(3, 7, 5);
   width: 10rem;
   padding: 1rem;
   border: none;
   border-radius: 10px;
   background: linear-gradient(145deg, #ffffff, #dedede);
-  box-shadow: 2px 2px 4px #b2b2b2,
+  box-shadow: 2px 2px 8px #b2b2b2,
     -2px -2px 4px #ffffff;
   cursor: pointer;
 }
 
 .shop-now-button:hover {
-  box-shadow: inset 2px 2px 4px #b2b2b2,
-    inset -2px -2px 4px #ffffff;
+  box-shadow: 2px 2px 12px #b2b2b2,
+    -2px -2px 4px #ffffff;
 }
 
-.tagline {
-  font-size: 2rem;
-  font-family: 'BioRhyme', serif;
-  color: green;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 3rem;
+.shop-now-button:active {
+  box-shadow: inset 2px 2px 4px #b2b2b2,
+  inset -2px -2px 4px #ffffff;
 }
 
 .value-section {
@@ -87,7 +83,6 @@
   height: 100%;
   width: 50%;
   object-fit: cover;
-
 }
 
 .hero-content-container {
@@ -95,7 +90,7 @@
 }
 
 .value-paragraph {
-  font-family: 'Atma', cursive;
+  font-family: 'Space Mono', monospace;
   font-size: 3rem;
   padding: 3rem;
 }

@@ -1,6 +1,5 @@
 import Header from "../Header";
 
-//placeholder image url
 import heroLeaf from '../../assets/hero-leaf.jpg';
 import fresh from '../../assets/fresh.jpg';
 import './home.css';
