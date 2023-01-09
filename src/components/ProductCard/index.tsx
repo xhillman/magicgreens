@@ -1,9 +1,24 @@
+import './productCard.css'
 
+interface ProductCardProps {
+  name: string;
+  price: number;
+}
 
-function ProductCard() {
+function ProductCard(props: ProductCardProps) {
+
+  const {name, price} = props;
+
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
+
   return (
     <div className="product-card">
-      <h3>Product Name Here</h3>
+      <img src=""></img>
+      <h3>{name}</h3>
+      <p>{formatter.format(price)}</p>
     </div>
   )
 }
