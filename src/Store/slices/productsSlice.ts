@@ -7,6 +7,7 @@ export interface Product {
   price: number;
   quantity: number;
   category: string;
+  image?: string;
 }
 
 export interface ProductState {
@@ -20,6 +21,7 @@ const initialState: ProductState = {
       price: 3.49,
       quantity: 100,
       category: 'leafy green',
+      image: '../../assets/butterhead.png',
     },
     {
       name: 'Loose-Leaf Lettuce',
