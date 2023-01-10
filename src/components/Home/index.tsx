@@ -12,9 +12,8 @@ function Home() {
         <div className="headings">
           <h2 className="hero-heading">MagicGreens</h2>
           <p className="hero-subheading">Fast - Fresh - Thoughtful</p>
-          {/* <p className="hero-subheading">Farming of the future.</p> */}
         </div>
-        <button className="shop-now-button">Shop Now</button>
+        <a href='thegoods'><button className="shop-now-button">Shop Now</button></a>
       </div>
       <div className='value-section'>
         <img className='value-image' src={fresh} />
