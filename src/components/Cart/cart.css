@@ -7,7 +7,7 @@
   position: fixed;
   top: 12vh;
   right: 10px;
-  width: 40%;
+  width: 50%;
   max-width: 90vw;
   border-radius: 10px;
   font-family: 'Space Mono', monospace;
@@ -24,6 +24,12 @@
   margin-bottom: 0;
 }
 
+.item-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .cart-item {
   display: flex;
   justify-content: space-between;
@@ -33,10 +39,14 @@
   line-height: .5rem;
 }
 
+#at-sign {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 .remove-from-cart {
   font-family: 'Space Mono', monospace;
   font-size: .8rem;
-  width: 100%;
+  width: fit-content;
   border: none;
   border-radius: 5px;
   background: linear-gradient(145deg, #ffffff, #dedede);
@@ -53,4 +63,14 @@
 .remove-from-cart:active {
   box-shadow: inset 2px 2px 4px #b2b2b2,
   inset -2px -2px 4px #ffffff;
+}
+
+.price-breakdown {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: .8rem;
+  color: rgb(15, 22, 14);
+  padding: 1rem;
+  line-height: .1rem;
 }
