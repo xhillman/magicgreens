@@ -21,7 +21,8 @@ function ProductCard(props: ProductCardProps) {
   let item: ICartItem = {
     name: name,
     price: price,
-    quantity: 1
+    quantity: 1,
+    image
   }
 
   function handleClick() {
@@ -37,7 +38,7 @@ function ProductCard(props: ProductCardProps) {
 
   return (
     <div className="product-card">
-      <img className='product-photo' src={basil} height='200px'></img>
+      <img className='product-photo' src={image} height='200px'></img>
       <div className='product-info'>
         <h3>{name}</h3>
         <p>{formatter.format(price)}</p>

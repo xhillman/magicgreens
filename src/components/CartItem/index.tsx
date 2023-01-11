@@ -7,7 +7,7 @@ import './cartItem.css'
 
 function CartItem(props: ICartItem) {
 
-  const { name, price, quantity } = props;
+  const { name, price, quantity, image } = props;
 
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -30,7 +30,7 @@ function CartItem(props: ICartItem) {
     <div className='cart-item'>
       <div className='item-section'>
         <div className='container'>
-          <img className='item-photo' src={basil} height='100px'></img>
+          <img className='item-photo' src={image} height='100px'></img>
           <div className='item-info'>
             <p>{name} <span id='at-sign'>@</span> {formatter.format(price)}</p>
             <p>Qty: {quantity}</p>

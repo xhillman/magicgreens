@@ -43,7 +43,8 @@ function Cart() {
             <CartItem 
               name={item.name} 
               price={item.price} 
-              quantity={item.quantity} 
+              quantity={item.quantity}
+              image={item.image}
             />
           )
         })

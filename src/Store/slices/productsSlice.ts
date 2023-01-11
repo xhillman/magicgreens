@@ -58,6 +58,7 @@ const initialState: ProductState = {
       price: 2.49,
       quantity: 100,
       category: 'herb',
+      image: '../../assets/basil.png',
     },
     {
       name: 'Parsley',
