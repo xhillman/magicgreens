@@ -1,7 +1,7 @@
 import Header from "../Header";
 
-import heroLeaf from '../../assets/hero-leaf.jpg';
-import fresh from '../../assets/fresh.jpg';
+import heroLeaf from '../../../public/assets/hero-leaf.jpg';
+import fresh from '../../../public/assets/fresh.jpg';
 import './home.css';
 
 function Home() {
