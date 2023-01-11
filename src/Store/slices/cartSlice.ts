@@ -2,14 +2,14 @@ import {createSlice} from '@reduxjs/toolkit';
 import { PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 
-export interface CartItem {
+export interface ICartItem {
   name: string;
   price: number;
   quantity: number;
 }
 
 export interface CartState {
-  cart: CartItem[];
+  cart: ICartItem[];
 }
 
 const initialState: CartState = {
@@ -20,7 +20,7 @@ export const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
-    addToCart: (state, action: PayloadAction<CartItem>) => {
+    addToCart: (state, action: PayloadAction<ICartItem>) => {
       if(state.cart.some((item) => item.name === action.payload.name)) {
         state.cart = state.cart.map((item) => {
           if (item.name === action.payload.name) {
@@ -38,11 +38,11 @@ export const cartSlice = createSlice({
         localStorage.setItem('cart', JSON.stringify(state.cart));
       }
     },
-    removeFromCart: (state, action: PayloadAction<CartItem>) => {
+    removeFromCart: (state, action: PayloadAction<ICartItem>) => {
       state.cart = state.cart.filter((item) => item.name !== action.payload.name);
       localStorage.setItem('cart', JSON.stringify(state.cart));
     },
-    increaseQuantity: (state, action: PayloadAction<CartItem>) => {
+    increaseQuantity: (state, action: PayloadAction<ICartItem>) => {
       state.cart = state.cart.map((item) => {
         if (item.name === action.payload.name) {
           return {
@@ -54,7 +54,7 @@ export const cartSlice = createSlice({
       });
       localStorage.setItem('cart', JSON.stringify(state.cart));
     },
-    decreaseQuantity: (state, action: PayloadAction<CartItem>) => {
+    decreaseQuantity: (state, action: PayloadAction<ICartItem>) => {
       state.cart = state.cart.map((item) => {
         if (item.name === action.payload.name) {
           return {

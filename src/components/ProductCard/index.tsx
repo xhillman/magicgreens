@@ -4,7 +4,7 @@ import basil from '../../assets/basil.png'
 
 import { addToCart } from '../../Store/slices/cartSlice';
 import { useAppDispatch } from '../../Store/hooks';
-import {CartItem} from '../../Store/slices/cartSlice'
+import {ICartItem} from '../../Store/slices/cartSlice'
 
 interface ProductCardProps {
   name: string;
@@ -18,7 +18,7 @@ function ProductCard(props: ProductCardProps) {
 
   const dispatch = useAppDispatch();
 
-  let item: CartItem = {
+  let item: ICartItem = {
     name: name,
     price: price,
     quantity: 1
