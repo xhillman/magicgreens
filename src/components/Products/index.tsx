@@ -8,7 +8,6 @@ import './products.css'
 function Products() {
 
   const products = useAppSelector((state) => state.product);
-  console.log(products)
 
   return (
     <>
@@ -21,10 +20,6 @@ function Products() {
               products.products.map((product: Product) => {
                 return (
                   <ProductCard name={product.name} price={product.price} image={product.image}/>
-                  // <div className="product-card" key={product.name}>
-                  //   <h3>{product.name}</h3>
-                  //   <p>{product.price}</p>
-                  // </div>
                 )
               })
             }

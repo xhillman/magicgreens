@@ -1,8 +1,14 @@
+import Cart from '../Cart';
+import {useState} from 'react';
+
 import './header.css';
 
 import logo from '../../assets/logo.png'
 
 function Header() {
+
+  const [cartOpen, setCartOpen] = useState(false);
+
   return (
     <>
       <header className='header'>
@@ -15,7 +21,10 @@ function Header() {
             <li className='nav-item'><a href="/thegoods">The Goods</a></li>
           </ul>
         </nav>
-        <button className='cart-button'>Cart</button>
+        <button className='cart-button' onClick={() => setCartOpen(!cartOpen)}>Cart</button>
+        {
+          cartOpen ? <Cart /> : null
+        }
       </header>
     </>
   )

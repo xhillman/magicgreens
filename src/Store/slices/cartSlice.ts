@@ -31,13 +31,16 @@ export const cartSlice = createSlice({
           }
           return item;
         });
+        localStorage.setItem('cart', JSON.stringify(state.cart));
         return;
       } else {
         state.cart.push(action.payload);
+        localStorage.setItem('cart', JSON.stringify(state.cart));
       }
     },
     removeFromCart: (state, action: PayloadAction<CartItem>) => {
       state.cart = state.cart.filter((item) => item.name !== action.payload.name);
+      localStorage.setItem('cart', JSON.stringify(state.cart));
     },
     increaseQuantity: (state, action: PayloadAction<CartItem>) => {
       state.cart = state.cart.map((item) => {
@@ -49,6 +52,7 @@ export const cartSlice = createSlice({
         }
         return item;
       });
+      localStorage.setItem('cart', JSON.stringify(state.cart));
     },
     decreaseQuantity: (state, action: PayloadAction<CartItem>) => {
       state.cart = state.cart.map((item) => {
@@ -60,6 +64,7 @@ export const cartSlice = createSlice({
         }
         return item;
       });
+      localStorage.setItem('cart', JSON.stringify(state.cart));
     }
   }
 })

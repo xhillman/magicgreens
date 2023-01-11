@@ -28,7 +28,7 @@ function ProductCard(props: ProductCardProps) {
     dispatch(addToCart(item))
   }
 
-  console.log('image', typeof image, image)
+  // console.log('image', typeof image, image)
 
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
