@@ -1,12 +1,9 @@
 import basil from '../../assets/basil.png'
 import {ICartItem} from '../../Store/slices/cartSlice'
+import { useAppDispatch } from '../../Store/hooks';
+import { removeFromCart } from '../../Store/slices/cartSlice';
 import './cartItem.css'
 
-interface CartItemProps {
-  name: string;
-  price: number;
-  quantity: number;
-}
 
 function CartItem(props: ICartItem) {
 
@@ -16,6 +13,18 @@ function CartItem(props: ICartItem) {
     style: 'currency',
     currency: 'USD',
   });
+
+  const dispatch = useAppDispatch();
+
+  const item = {
+    name,
+    price,
+    quantity
+  }
+
+  const handleRemoveFromCart = () => {
+    dispatch(removeFromCart(item))
+  }
 
   return (
     <div className='cart-item'>
@@ -29,7 +38,7 @@ function CartItem(props: ICartItem) {
         </div>
         <p>({formatter.format(price * quantity)})</p>
       </div>
-      <button className='remove-from-cart'>Delete</button>
+      <button className='remove-from-cart' onClick={handleRemoveFromCart}>Delete</button>
     </div>
   )
 }

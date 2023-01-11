@@ -9,9 +9,10 @@
   right: 10px;
   width: fit-content;
   max-width: 90vw;
+  max-height: 80vh;
   border-radius: 10px;
   font-family: 'Space Mono', monospace;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .cart-header {
@@ -24,102 +25,11 @@
   margin-bottom: 0;
 }
 
-/* .item-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.item-info {
-  margin-right: 1.5rem;
-}
-
-.cart-item {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 1rem;
-  font-size: .75rem;
-  line-height: .5rem;
-  border-bottom: 1px solid #c5ddc7;
-
-}
-
-#at-sign {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-.container {
+.empty-cart {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: auto;
-}
-
-.item-photo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: auto;
-}
-
-.remove-from-cart {
-  font-family: 'Space Mono', monospace;
-  font-size: .5rem;
-  width: fit-content;
-  border: none;
-  border-radius: 5px;
-  background: linear-gradient(145deg, #ffffff, #dedede);
-  box-shadow: 1px 1px 2px #b2b2b2,
-    -1px -1px 2px #ffffff;
-  cursor: pointer;
-}
-
-.remove-from-cart:hover {
-  box-shadow: 2px 2px 12px #b2b2b2,
-  -2px -2px 4px #ffffff;
-}
-
-.remove-from-cart:active {
-  box-shadow: inset 2px 2px 4px #b2b2b2,
-  inset -2px -2px 4px #ffffff;
-}
-
-.price-breakdown {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  font-size: .75rem;
+  font-weight: 500;
   color: rgb(15, 22, 14);
-  padding: 1rem;
-  line-height: .1rem;
+  margin-bottom: 0;
 }
-
-.grand-total {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.checkout-button {
-  font-family: 'Space Mono', monospace;
-  color: rgb(12, 20, 16);
-  border: none;
-  padding: .25rem;
-  border-radius: 10px;
-  background: linear-gradient(145deg, #d5b540, #dedede);
-  box-shadow: 2px 2px 8px #bd953e,
-    -2px -2px 4px #ffffff;
-  cursor: pointer;
-}
-
-.checkout-button:hover {
-  box-shadow: 2px 2px 12px #bd953e,
-  -2px -2px 4px #ffffff;
-}
-
-.checkout-button:active {
-  box-shadow: inset 2px 2px 4px #d5b540,
-  inset -2px -2px 4px #ecd379;
-} */
