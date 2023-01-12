@@ -13,7 +13,7 @@ function Products() {
     <>
       <Header />
       <div className="product-section">
-        <h1>The Goods</h1>
+        <h1>Our Products</h1>
         <div className="product-container">
           <div className="products">
             {

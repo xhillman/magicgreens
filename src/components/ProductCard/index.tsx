@@ -1,6 +1,4 @@
-import './productCard.css'
-import basil from '../../assets/basil.png'
-// import butterhead from '../../assets/butterhead.png'
+import './productCard.css';
 
 import { addToCart } from '../../Store/slices/cartSlice';
 import { useAppDispatch } from '../../Store/hooks';

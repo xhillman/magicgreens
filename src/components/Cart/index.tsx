@@ -20,8 +20,8 @@ function Cart() {
     currency: 'USD',
   });
 
-  const itemTotal = +cartItems.reduce((acc: number, item: ICartItem) => {
-    return acc + (item.price * item.quantity);
+  const itemTotal = +cartItems.reduce((total: number, item: ICartItem) => {
+    return total + (item.price * item.quantity);
   }, 0).toFixed(2);
 
   const taxAmount = +itemTotal * 0.0625;

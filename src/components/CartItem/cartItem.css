@@ -38,6 +38,17 @@
   padding-right: 1rem;
 }
 
+.quantity-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.quantity-field {
+  margin-left: .25rem;
+  font-family: 'Space Mono', monospace;
+}
+
 .remove-from-cart {
   font-family: 'Space Mono', monospace;
   font-size: .5rem;
