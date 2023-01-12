@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   background-color: rgb(99, 195, 125);
-  /* linear gradient background */
   background: linear-gradient(145deg, #c7f1c8, #f7f7f7);
   position: fixed;
   top: 12vh;

@@ -36,7 +36,7 @@ function CartItem(props: ICartItem) {
             <p>Qty: {quantity}</p>
           </div>
         </div>
-        <p>({formatter.format(price * quantity)})</p>
+        <p>{formatter.format(price * quantity)}</p>
       </div>
       <button className='remove-from-cart' onClick={handleRemoveFromCart}>Delete</button>
     </div>
