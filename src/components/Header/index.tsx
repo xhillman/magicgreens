@@ -24,7 +24,7 @@ function Header() {
         </nav>
         <button className='cart-button' onClick={() => setCartOpen(!cartOpen)}>Cart</button>
         {
-          cartOpen ? <Cart /> : null
+          cartOpen ? <Cart setCartOpen={setCartOpen}/> : null
         }
       </header>
     </>

@@ -5,9 +5,14 @@ import CartItem from '../CartItem';
 
 import './cart.css';
 
-function Cart() {
+interface CartProps {
+  setCartOpen: (value: boolean) => void;
+}
+
+function Cart(props: CartProps) {
 
   const stateCartItems = useAppSelector((state) => state.cart);
+  const { setCartOpen } = props;
 
   let cartItemsObject = localStorage.getItem('cart');
   if (typeof cartItemsObject !== 'string') {
@@ -33,6 +38,7 @@ function Cart() {
 
   return (
     <div id='cart'>
+      <button className='close-button' onClick={() => setCartOpen(false)}>x</button>
       <h1 className='cart-header'>Shopping Cart</h1>
       {
         cartItems.length === 0 && <p className='empty-cart'>Your cart is empty</p>

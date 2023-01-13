@@ -12,6 +12,7 @@
   border-radius: 10px;
   font-family: 'Space Mono', monospace;
   overflow: auto;
+  padding-top: .25rem;
 }
 
 .cart-header {
@@ -22,6 +23,19 @@
   font-weight: 500;
   color: rgb(15, 22, 14);
   margin-bottom: 0;
+}
+
+.close-button {
+  color: rgb(151, 191, 146);
+  font-size: .65rem;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 1.5rem;
+  border: 1px solid rgb(151, 191, 146);
+  border-radius: 15px;
+  background: transparent;
+  cursor: pointer;
 }
 
 .empty-cart {
