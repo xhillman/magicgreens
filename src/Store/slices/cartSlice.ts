@@ -27,7 +27,7 @@ export const cartSlice = createSlice({
           if (item.name === action.payload.name) {
             return {
               ...item,
-              quantity: item.quantity + 1,
+              quantity: action.payload.quantity,
             };
           }
           return item;
@@ -43,34 +43,10 @@ export const cartSlice = createSlice({
       state.cart = state.cart.filter((item) => item.name !== action.payload.name);
       localStorage.setItem('cart', JSON.stringify(state.cart));
     },
-    increaseQuantity: (state, action: PayloadAction<ICartItem>) => {
-      state.cart = state.cart.map((item) => {
-        if (item.name === action.payload.name) {
-          return {
-            ...item,
-            quantity: item.quantity + 1,
-          };
-        }
-        return item;
-      });
-      localStorage.setItem('cart', JSON.stringify(state.cart));
-    },
-    decreaseQuantity: (state, action: PayloadAction<ICartItem>) => {
-      state.cart = state.cart.map((item) => {
-        if (item.name === action.payload.name) {
-          return {
-            ...item,
-            quantity: item.quantity - 1,
-          };
-        }
-        return item;
-      });
-      localStorage.setItem('cart', JSON.stringify(state.cart));
-    }
   }
 })
 
-export const { addToCart, removeFromCart, increaseQuantity, decreaseQuantity } = cartSlice.actions;
+export const { addToCart, removeFromCart } = cartSlice.actions;
 
 export const selectCart = (state: RootState) => state.cart;
 

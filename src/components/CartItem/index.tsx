@@ -1,11 +1,13 @@
 import { ICartItem } from '../../Store/slices/cartSlice'
-import { useAppDispatch } from '../../Store/hooks';
-import { removeFromCart } from '../../Store/slices/cartSlice';
-import { useState } from 'react';
+import { useAppDispatch, useAppSelector } from '../../Store/hooks';
+import { removeFromCart, addToCart } from '../../Store/slices/cartSlice';
+import { useEffect, useState } from 'react';
 import './cartItem.css'
 
 
 function CartItem(props: ICartItem) {
+
+  const cartItems = useAppSelector((state) => state.cart);
 
   const { name, price, quantity, image } = props;
   const [itemQuantity, setItemQuantity] = useState(quantity);
@@ -20,7 +22,8 @@ function CartItem(props: ICartItem) {
   const item = {
     name,
     price,
-    quantity
+    quantity: itemQuantity,
+    image
   }
 
   const handleRemoveFromCart = () => {
@@ -30,6 +33,10 @@ function CartItem(props: ICartItem) {
   function handleQuantityChange(event: any) {
     setItemQuantity(event.target.value);
   }
+
+  useEffect(() => {
+    dispatch(addToCart(item))
+  }, [itemQuantity])
 
   return (
     <div className='cart-item'>
