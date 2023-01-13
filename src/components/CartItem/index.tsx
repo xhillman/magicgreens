@@ -1,13 +1,11 @@
 import { ICartItem } from '../../Store/slices/cartSlice'
-import { useAppDispatch, useAppSelector } from '../../Store/hooks';
+import { useAppDispatch } from '../../Store/hooks';
 import { removeFromCart, addToCart } from '../../Store/slices/cartSlice';
 import { useEffect, useState } from 'react';
 import './cartItem.css'
 
 
 function CartItem(props: ICartItem) {
-
-  const cartItems = useAppSelector((state) => state.cart);
 
   const { name, price, quantity, image } = props;
   const [itemQuantity, setItemQuantity] = useState(quantity);

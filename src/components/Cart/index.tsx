@@ -51,6 +51,7 @@ function Cart(props: CartProps) {
               price={item.price} 
               quantity={item.quantity}
               image={item.image}
+              key={item.name}
             />
           )
         })

@@ -19,7 +19,7 @@ function Products() {
             {
               products.products.map((product: Product) => {
                 return (
-                  <ProductCard name={product.name} price={product.price} image={product.image}/>
+                    <ProductCard name={product.name} price={product.price} image={product.image} key={product.name}/>
                 )
               })
             }
