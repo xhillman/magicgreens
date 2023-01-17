@@ -1,3 +1,12 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
 .hero-section {
   /* background-image: url("../../assets/hero-leaf.jpg");
   background-color: #cccccc;
@@ -6,10 +15,17 @@
   background-repeat: no-repeat;
   background-size: cover; */
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 90vh;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-heading {
@@ -23,7 +39,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
-  margin-bottom: 0;
+  margin: 0;
 
 }
 
@@ -71,22 +87,32 @@
   inset -2px -2px 4px #ffffff;
 }
 
+.feature-section {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .value-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .value-image {
   max-width: 50vw;
-  height: 100%;
+  height: 80%;
   width: 50%;
-  object-fit: cover;
+  object-fit: contain;
+  /* MAKE THE IMAGE ROUND */
+  border-radius: 100%;
 }
 
 .hero-content-container {
-  width: 50%;
+  width: 60%;
 }
 
 .value-paragraph {
