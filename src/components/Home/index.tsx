@@ -33,7 +33,6 @@ function Home() {
             <video className='value-video' autoPlay loop muted>
               <source src={fresh} type="video/mp4" />
             </video>
-            {/* <img className='value-image' src={fresh} /> */}
           </div>
           <div className='value-section'>
             <img className='value-image' src={thoughtful} />

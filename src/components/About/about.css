@@ -1,0 +1,69 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.about-timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Space Mono', monospace;
+}
+
+.timeline {
+  background-color: black;
+  height: 20vh;
+  width: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.timepoint-left {
+  font-family: 'BioRhyme', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  padding-right: 50vw;
+  width: 40%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.timepoint-left p {
+  margin: 0;
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+.timepoint-right {
+  font-family: 'BioRhyme', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-left: 50vw;
+  width: 40%;
+}
+
+.timepoint-right p {
+  margin: 0;
+  text-align: left;
+}
