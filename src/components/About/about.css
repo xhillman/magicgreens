@@ -37,18 +37,17 @@ p {
   align-items: flex-end;
   flex-direction: column;
   margin-bottom: 40px;
-  padding-right: 50vw;
-  width: 40%;
+  padding-right: 60vw;
+  width: 50%;
   opacity: 0;
   filter: blur(5px);
-  /* transform: translateX(-100%); */
   transition: all 1s;
 }
 
 .hidden-left p {
   margin: 0;
   text-align: right;
-  font-size: 1.25rem;
+  width: 60%;
 }
 
 .show-left {
@@ -63,18 +62,17 @@ p {
   align-items: flex-start;
   flex-direction: column;
   margin-bottom: 40px;
-  padding-left: 50vw;
-  width: 40%;
+  padding-left: 60vw;
+  width: 50%;
   opacity: 0;
   filter: blur(5px);
-  /* transform: translateX(100%); */
   transition: all 1s;
 }
 
 .hidden-right p {
   margin: 0;
   text-align: left;
-  font-size: 1.25rem;
+  width: 60%;
 }
 
 .show-right {

@@ -53,27 +53,27 @@ function About() {
           <div className='timeline'></div>
           <div ref={pushLeftRef} className='hidden-left'>
             <h2>2017</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor minus commodi.</p>
+            <p>MagicGreens is born! <br/>After coming to the realization that modern food production wouldn't be able to keep up with the world's growing population, we set out to find a sustaiable solution.</p>
           </div>
           <div ref={pushRightRef} className='hidden-right'>
             <h2>2018</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor minus commodi.</p>
+            <p>Our first greenhouse finishes construction! Let's grow some greens!</p>
           </div>
           <div ref={pushLeftRef} className='hidden-left'>
             <h2>2019</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor minus commodi.</p>
+            <p>The very first harvest of lettuce and basil goes out to customers!</p>
           </div>
           <div ref={pushRightRef} className='hidden-right'>
             <h2>2020</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor minus commodi.</p>
+            <p>Greenhouse #1 is fitted with solar panels and a water recycler to reduce our energy usage and increase water efficiency.</p>
           </div>
           <div ref={pushLeftRef} className='hidden-left'>
             <h2>2021</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor minus commodi.</p>
+            <p>We did some experimenting and came up with a unique system to increase out variety of products.</p>
           </div>
           <div ref={pushRightRef} className='hidden-right'>
             <h2>2022</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor minus commodi.</p>
+            <p>Greenhouse #2 starts construction so we can reach even more communities!</p>
           </div>
         </div>
 
