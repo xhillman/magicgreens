@@ -1,0 +1,8 @@
+<svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+	<defs>
+		<clipPath id="blob">
+			<path fill="#474bff" d="M454,290.5Q451,341,418,381.5Q385,422,338,443.5Q291,465,240.5,461.5Q190,458,147,434.5Q104,411,74.5,372.5Q45,334,28,287Q11,240,27.5,193Q44,146,73.5,107Q103,68,145.5,41Q188,14,238,21Q288,28,337,42.5Q386,57,421,96.5Q456,136,456.5,188Q457,240,454,290.5Z" />
+		</clipPath>
+	</defs>
+	<image x="0" y="0" width="100%" height="100%" clip-path="url(#blob)" xlink:href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Greenhouse_at_Wilson_Farm%2C_East_Lexington_MA.jpg" preserveAspectRatio="xMidYMid slice"></image>
+</svg>
