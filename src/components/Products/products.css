@@ -8,6 +8,11 @@
   margin: auto;
 }
 
+.product-section h1 {
+  font-size: 3rem;
+  margin-bottom: 5vw;
+}
+
 .product-container {
   width: 100%;
 }

@@ -38,7 +38,6 @@ function About() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show-right');
-          // console.log(entries);
         } else {
           entry.target.classList.remove('show-right');
         }
