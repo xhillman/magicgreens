@@ -40,8 +40,8 @@
   border: 1px solid black;
   border-radius: 5px;
   background-color: rgb(84, 166, 109);
-  font-size: 1.25rem;
   font-family: 'Space Mono', monospace;
+  cursor: pointer;
 }
 
 .contact-info {

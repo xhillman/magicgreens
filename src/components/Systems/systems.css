@@ -7,7 +7,6 @@
 
 .systems-container h1 {
   font-size: 3rem;
-  margin-bottom: 5vw;
   font-family: 'Space Mono', monospace;
 }
 
@@ -15,11 +14,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 90vw;
+  margin: 5vh;
 }
 
 .systems-img {
-  width: 50vw;
+  width: 40vw;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .systems-paragraph {

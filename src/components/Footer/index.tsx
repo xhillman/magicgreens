@@ -1,11 +1,19 @@
 import './footer.css'
 
 function Footer() {
+
+  const submit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // clear the input
+    const input = document.querySelector('.email') as HTMLInputElement;
+    input.value = '';
+  }
+
   return (
     <footer className="footer">
       <div className="newsletter">
         <h2>Sign up for our newsletter!</h2>
-        <form className='newsletter-form'>
+        <form className='newsletter-form' onSubmit={submit}>
           <input type="text" placeholder="Email Address" className='email'/>
           <button className='newsletter-btn'>Sign Up</button>
         </form>
