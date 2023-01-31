@@ -1,4 +1,5 @@
 import Header from "../Header";
+import Footer from "../Footer";
 
 import fresh from '../../../public/assets/fresh-image.mp4';
 import fast from '../../../public/assets/delivery-image.png';
@@ -42,6 +43,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

@@ -6,6 +6,7 @@ import harvest from '../../../public/assets/harvest.svg';
 import solar from '../../../public/assets/solar-install.svg';
 import vertical from '../../../public/assets/vertical.svg';
 import greenhouse2 from '../../../public/assets/greenhouse2.svg';
+import Footer from "../Footer";
 import './about.css';
 
 function About() {
@@ -101,6 +102,7 @@ function About() {
         </div>
 
       </div>
+      <Footer />
     </>
   );
 }

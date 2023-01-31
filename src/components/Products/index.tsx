@@ -2,6 +2,7 @@ import Header from "../Header";
 import { useAppSelector } from '../../Store/hooks';
 import { Product } from "../../Store/slices/productsSlice";
 import ProductCard from "../ProductCard";
+import Footer from "../Footer";
 
 import './products.css'
 
@@ -26,6 +27,7 @@ function Products() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

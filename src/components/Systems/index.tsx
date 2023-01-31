@@ -1,5 +1,5 @@
 import Header from "../Header";
-
+import Footer from "../Footer";
 import hydroponics from '../../../public/assets/hydroponics.jpg';
 import vertical from '../../../public/assets/vertical.jpg';
 import solar from '../../../public/assets/solar.jpg';
@@ -25,6 +25,7 @@ function Systems() {
           <p  className="systems-paragraph">Solar power offers a sustainable solution for energy needs. Some advantages include reduced energy costs, reduced carbon footprint, and power for irrigation systems and climate controls. Additionally, solar power can be stored for use during non-sunny periods, providing a reliable source of energy. Investing in solar power not only saved us money, but also supports our environmentally friendly farming practices.</p>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
