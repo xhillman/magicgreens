@@ -24,7 +24,7 @@ function Home() {
           <div className='value-section'>
             <img className='value-image' src={fast} />
             <div className="hero-content-container">
-              <p className="value-paragraph">We're a part of your community, so food get to your plate faster.</p>
+              <p className="value-paragraph">We're a part of your community, so food gets to your plate faster.</p>
             </div>
           </div>
           <div className='value-section'>
