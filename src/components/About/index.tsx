@@ -1,6 +1,6 @@
 import Header from "../Header";
 import { useRef, useEffect } from 'react';
-import idea from '../../../public/assets/idea.png';
+import idea from '../../../public/assets/idea.svg';
 import greenhouse from '../../../public/assets/greenhouse.svg';
 import harvest from '../../../public/assets/harvest.svg';
 import solar from '../../../public/assets/solar-install.svg';
@@ -59,7 +59,7 @@ function About() {
           <div className='timeline'></div>
           <div ref={pushLeftRef} className='hidden-left'>
             <div className="timeline-heading">
-              <img className="timeline-img" src={idea} />
+              <embed className="timeline-img" src={idea} />
               <h2>2017</h2>
             </div>
             <p>MagicGreens is born! <br />After coming to the realization that modern food production wouldn't be able to keep up with the world's growing population, we set out to find a sustaiable solution.</p>
@@ -90,7 +90,7 @@ function About() {
               <embed className="timeline-img" src={vertical} />
               <h2>2021</h2>
             </div>
-            <p>We did some experimenting and came up with a unique system to increase out variety of products.</p>
+            <p>We did some experimenting and came up with a unique system to increase our variety of products.</p>
           </div>
           <div ref={pushRightRef} className='hidden-right'>
             <div className="timeline-heading">
