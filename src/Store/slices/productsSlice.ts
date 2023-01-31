@@ -31,7 +31,7 @@ const initialState: ProductState = {
       image: '../../assets/looseleaf.png',
     },
     {
-      name: 'Batvia Lettuce',
+      name: 'Batavia Lettuce',
       price: 3.49,
       quantity: 100,
       category: 'leafy green',
