@@ -108,3 +108,9 @@
   box-shadow: inset 2px 2px 4px #d5b540,
   inset -2px -2px 4px #ecd379;
 }
+
+@media screen and (max-width: 425px) {
+  .item-info p {
+    font-size: .65rem;
+  }
+}

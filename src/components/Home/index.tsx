@@ -29,7 +29,7 @@ function Home() {
           </div>
           <div className='value-section'>
             <div className="hero-content-container">
-              <p className="value-paragraph">Controlled growing environments mean fresh food all year long.</p>
+              <p className="value-paragraph" id="controlled">Controlled growing environments mean fresh food all year long.</p>
             </div>
             <video className='value-video' autoPlay loop muted>
               <source src={fresh} type="video/mp4" />

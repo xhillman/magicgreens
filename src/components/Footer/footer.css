@@ -26,6 +26,33 @@
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 768px) {
+  .newsletter-form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .newsletter-form {
+    width: 90%;
+  }
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .newsletter-form {
+    width: 90%;
+  }
+  .newsletter h2 {
+    font-size: 1.25rem;
+  }
+  .newsletter-btn {
+   font-size: .8rem;
+  }
+}
+
 .email {
   width: 70%;
   height: 1.5rem;

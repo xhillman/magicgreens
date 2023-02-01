@@ -13,6 +13,12 @@
   margin-bottom: 5vw;
 }
 
+@media screen and (max-width: 768px) {
+  .product-section h1 {
+    font-size: 2rem;
+  }
+}
+
 .product-container {
   width: 100%;
 }

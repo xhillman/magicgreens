@@ -41,6 +41,13 @@
   color: black;
 }
 
+@media screen and (max-width: 425px) {
+  .nav-item a {
+    text-align: center;
+    font-size: .75rem;
+  }
+}
+
 .nav-item a:hover {
   color: rgb(50, 124, 50);
 }
