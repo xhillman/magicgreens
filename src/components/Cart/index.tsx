@@ -29,9 +29,9 @@ function Cart(props: CartProps) {
     return total + (item.price * item.quantity);
   }, 0).toFixed(2);
 
-  const taxAmount = +itemTotal * 0.0625;
+  const shippingCost = +itemTotal * 0.09;
 
-  const grandTotal = +itemTotal + +taxAmount;
+  const grandTotal = +itemTotal + +shippingCost;
 
   useEffect(() => {
   }, [stateCartItems])
@@ -58,10 +58,9 @@ function Cart(props: CartProps) {
       }
       <div className='price-breakdown'>
         <p>Subtotal: {formatter.format(itemTotal)}</p>
-        <p>Shipping: $0.00</p>
-        <p>Tax: {formatter.format(taxAmount)}</p>
+        <p>Shipping: {formatter.format(shippingCost)}</p>
         <p className='grand-total'>Order Total: {formatter.format(grandTotal)}</p>
-        <button className='checkout-button'>Checkout</button>
+        <button className='checkout-button'><a className="checkout-link" href="/checkout">Checkout</a></button>
       </div>
     </div>
   )

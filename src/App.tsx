@@ -3,7 +3,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Systems from './components/Systems'
 import Products from './components/Products'
-import Cart from './components/Cart'
+import Checkout from './components/Checkout'
 
 import './app.css'
 
@@ -11,11 +11,12 @@ function App() {
 
   return (
     <Routes>
-      {/* <Cart /> */}
       <Route path="/" element={<Home />} />
       <Route path="/thestory" element={<About />}/>
       <Route path="/thesystems" element={<Systems />} />
       <Route path="/thegoods" element={<Products />} />
+      <Route path="/checkout" element={<Checkout />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   )
 }
