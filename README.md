@@ -2,6 +2,8 @@
 
 This project was designed to help improve my frontend skills by creating an e-commerce website for a hydroponics farm. The website allows users to browse and purchase different produce products, as well as learn about hydroponic farming.
 
+![MagicGreens](./public/assets/magicgreens.jpeg)
+
 See [Deployed Site](https://unrivaled-liger-b560c5.netlify.app/)
 
 ## Features
