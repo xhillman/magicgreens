@@ -39,9 +39,37 @@
   width: 20%;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: rgb(84, 166, 109);
   font-family: 'Space Mono', monospace;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #dbdedb,rgb(33, 195, 82));
+  box-shadow: 2px 2px 8px #b2b2b2,
+    -2px -2px 4px #ffffff;
   cursor: pointer;
+}
+
+.newsletter-btn:hover {
+  box-shadow: 2px 2px 12px #b2b2b2,
+    -2px -2px 4px #ffffff;
+}
+
+.newsletter-btn:active {
+  box-shadow: inset 2px 2px 4px #b2b2b2,
+  inset -2px -2px 4px #ffffff;
+}
+
+.confirmation {
+  font-size: 1.5rem;
+  font-family: 'Space Mono', monospace;
+  background-color: rgb(138, 215, 138);
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.show-confirmation {
+  opacity: 1;
 }
 
 .contact-info {

@@ -7,6 +7,11 @@ function Footer() {
     // clear the input
     const input = document.querySelector('.email') as HTMLInputElement;
     input.value = '';
+    const confirmation = document.querySelector('.confirmation') as HTMLParagraphElement;
+    confirmation.classList.add('show-confirmation');
+    setTimeout(() => {
+      confirmation.classList.remove('show-confirmation');
+    }, 3000);
   }
 
   return (
@@ -17,6 +22,7 @@ function Footer() {
           <input type="text" placeholder="Email Address" className='email'/>
           <button className='newsletter-btn'>Sign Up</button>
         </form>
+        <p className='confirmation'>You're in!</p>
       </div>
       <p className='contact-info'>
         123 Main St. <br />
