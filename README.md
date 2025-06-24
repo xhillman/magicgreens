@@ -51,3 +51,8 @@ If you'd like to contribute to this project, feel free to create a pull request 
 ## License
 
 This project is licensed under the MIT License.
+
+
+## V2 Changes
+
+- Split client and server directories
